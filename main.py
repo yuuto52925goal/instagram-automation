@@ -2,7 +2,7 @@ import os
 from bs4 import BeautifulSoup
 import requests
 import lxml
-from login_handler import LoginHandler
+from login_handler import InstaHandler
 from dotenv import load_dotenv
 
 
@@ -14,6 +14,5 @@ load_dotenv()
 username = os.environ.get('USERNAME')
 password = os.environ.get('PASSWORD')
 
-instagram_analyze = LoginHandler(username, password)
+instagram_analyze = InstaHandler(username, password)
 instagram_analyze.login()
-print("hello")

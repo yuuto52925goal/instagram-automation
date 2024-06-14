@@ -7,7 +7,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 
 
-class LoginHandler:
+class InstaHandler:
     def __init__(self, username, password):
         load_dotenv()
         self.username = username
